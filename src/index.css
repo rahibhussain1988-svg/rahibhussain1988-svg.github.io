@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-50: #fdf2f4;
+  --color-maroon-100: #fbe5e9;
+  --color-maroon-200: #f8cdd6;
+  --color-maroon-300: #f3a3b4;
+  --color-maroon-400: #eb6e8b;
+  --color-maroon-500: #df3d65;
+  --color-maroon-600: #ca214a;
+  --color-maroon-700: #a9153a;
+  --color-maroon-800: #8b0029;
+  --color-maroon-900: #750924;
+  --color-maroon-950: #430111;
+  --color-crimson-cta: #941030;
+  --color-crimson-cta-hover: #7b0b26;
+}
+
+@layer base {
+  :root {
+    --color-brand-maroon: #8b0029;
+    --color-brand-maroon-dark: #68001f;
+    --color-brand-maroon-light: #a61238;
+    --color-brand-maroon-tint: #fdf2f4;
+    --color-medical-blue: #8b0029;
+    --color-medical-sky: #0284c7;
+    --color-medical-navy: #0f172a;
+    --color-medical-border: #e2e8f0;
+    --color-cabin-gold: #f59e0b;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Smooth light medical scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #93c5fd;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #60a5fa;
+  }
+}
+
+/* Utility to hide scrollbars completely on touch kiosks and clean views */
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+/* Touch active tactile feedback */
+.touch-press {
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+.touch-press:active {
+  transform: scale(0.97);
+  filter: brightness(0.95);
+}
+
+/* AKUH Crimson Brand & Modern SaaS UI Utilities */
+.btn-crimson {
+  background: linear-gradient(135deg, #8B0029 0%, #A61238 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 6px rgba(139, 0, 41, 0.2);
+}
+.btn-crimson:hover {
+  background: linear-gradient(135deg, #750022 0%, #8B0029 100%);
+  box-shadow: 0 4px 12px rgba(139, 0, 41, 0.3);
+  transform: translateY(-1px);
+}
+.btn-crimson:active {
+  transform: translateY(0);
+}
+
+.pill-search {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card-saas {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================================================================
+   UNIVERSAL MEDICAL PRINTER & PAPER ENGINE (A4 / A5 / 80mm THERMAL)
+   ========================================================================= */
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Universal avoid page splits */
+  tr, table, .avoid-page-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}

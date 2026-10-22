@@ -1,8 +1,8 @@
 {
-  "id": "apex-clinic-care-pwa",
-  "name": "Apex Clinic Care - Hospital Workstation",
-  "short_name": "ApexClinic",
-  "description": "Multi-Station Hospital & Clinic Management Platform: Touchscreen Patient Kiosk, Doctor Cabin Console, Billing POS, Inhouse Pharmacy & Lounge Queue TV.",
+  "id": "fatima-clinic-care-pwa",
+  "name": "Fatima Clinic & Diagnostic Center",
+  "short_name": "FatimaClinic",
+  "description": "Fatima Clinic & Diagnostic Center: Touchscreen Patient Kiosk, Doctor Cabin Console, Billing POS, Inhouse Pharmacy & Lounge Queue TV.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

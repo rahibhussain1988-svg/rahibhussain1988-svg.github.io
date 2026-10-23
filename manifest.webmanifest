@@ -3,13 +3,14 @@
   "name": "Fatima Clinic & Diagnostic Center",
   "short_name": "FatimaClinic",
   "description": "Fatima Clinic & Diagnostic Center: Touchscreen Patient Kiosk, Doctor Cabin Console, Billing POS, Inhouse Pharmacy & Lounge Queue TV.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./?source=pwa",
+  "scope": "./",
   "display": "standalone",
   "display_override": [
     "standalone",
     "minimal-ui",
-    "fullscreen"
+    "fullscreen",
+    "window-controls-overlay"
   ],
   "orientation": "any",
   "background_color": "#0f172a",
@@ -25,31 +26,31 @@
   "lang": "en-US",
   "icons": [
     {
-      "src": "/pwa-icon.svg",
+      "src": "./pwa-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/pwa-icon.svg",
+      "src": "./pwa-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "maskable"
     },
     {
-      "src": "/pwa-192.png",
+      "src": "./pwa-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa-512.png",
+      "src": "./pwa-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa-maskable-512.png",
+      "src": "./pwa-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -60,36 +61,36 @@
       "name": "Patient Self-Service Kiosk",
       "short_name": "Kiosk",
       "description": "Patient self-check-in, token booking, and vitals recording kiosk",
-      "url": "/?station=kiosk",
-      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+      "url": "./?source=pwa&station=kiosk",
+      "icons": [{ "src": "./pwa-icon.svg", "sizes": "any" }]
     },
     {
       "name": "Doctor Cabin Console",
       "short_name": "Doctor Cabin",
       "description": "Physician clinical consultation, EMR notes, and prescription formatting",
-      "url": "/?station=cabin",
-      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+      "url": "./?source=pwa&station=cabin",
+      "icons": [{ "src": "./pwa-icon.svg", "sizes": "any" }]
     },
     {
       "name": "Billing POS Desk",
       "short_name": "Billing POS",
       "description": "Consultation billing, Laser invoice printing, and payments",
-      "url": "/?station=billing",
-      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+      "url": "./?source=pwa&station=billing",
+      "icons": [{ "src": "./pwa-icon.svg", "sizes": "any" }]
     },
     {
       "name": "Inhouse Pharmacy Desk",
       "short_name": "Pharmacy",
       "description": "Rx fulfillment, stock inventory, and OTC dispensation",
-      "url": "/?station=pharmacy",
-      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+      "url": "./?source=pwa&station=pharmacy",
+      "icons": [{ "src": "./pwa-icon.svg", "sizes": "any" }]
     },
     {
       "name": "Lounge Queue Display TV",
       "short_name": "Queue TV",
       "description": "Full-screen patient calling board and token announcement TV",
-      "url": "/?station=queuetv",
-      "icons": [{ "src": "/pwa-icon.svg", "sizes": "any" }]
+      "url": "./?source=pwa&station=queuetv",
+      "icons": [{ "src": "./pwa-icon.svg", "sizes": "any" }]
     }
   ]
 }

@@ -1,14 +1,14 @@
 // Clinic Care Application Service Worker
-const CACHE_NAME = 'apex-clinic-care-v1';
+const CACHE_NAME = 'fatima-clinic-care-v2';
 const PRECACHE_ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.webmanifest',
-  '/manifest.json',
-  '/pwa-icon.svg',
-  '/pwa-192.png',
-  '/pwa-512.png',
-  '/pwa-maskable-512.png'
+  './',
+  './index.html',
+  './manifest.webmanifest',
+  './manifest.json',
+  './pwa-icon.svg',
+  './pwa-192.png',
+  './pwa-512.png',
+  './pwa-maskable-512.png'
 ];
 
 // Install: Pre-cache app shell assets
